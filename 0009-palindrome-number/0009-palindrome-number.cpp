@@ -12,7 +12,7 @@ public:
             if (num == x)
                 ans = true;
         }
-        else if(x == 0) 
+        if(x == 0) 
             ans = true;
         return ans;
     }
