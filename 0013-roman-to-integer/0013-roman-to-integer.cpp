@@ -11,7 +11,7 @@ public:
         int n = s.length();
         int ans = mp[s[n-1]];
         for(int i = n - 2; i >= 0; i--){
-            if(mp[s[i]] == mp[s[i+1]] / 5 || mp[s[i]] == mp[s[i+1]] / 10)
+            if(mp[s[i]] < mp[s[i+1]])
                 ans -= mp[s[i]];
             else
                 ans += mp[s[i]];
